@@ -1,11 +1,12 @@
-import react, { component } from 'react';
+import react, { Component } from 'react';
 import CardList from './CardList';
 import { robots } from './robots';
 import SearchBox from './SearchBox';
 
 
-class App extends component { //extended App component
+class App extends Component { //extended App component
     constructor() {
+        super()
         this.state = { //created state
             robots: robots,
             searchfield: ''

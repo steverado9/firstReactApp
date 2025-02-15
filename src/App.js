@@ -7,7 +7,7 @@ import './App.css';
 
 class App extends Component { //extended App component
     constructor() {
-        super()
+        super();
         this.state = { //created state
             robots: robots,
             searchfield: ''

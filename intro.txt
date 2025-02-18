@@ -1,0 +1,144 @@
+React
+skills required to be able to use react
+1)Thinking in components
+2)understand One way data flow
+3)virtual dom
+4)Great Eco system
+    How to add react to your project
+1)npm install -g create-react-app
+after creating the app globally, we say
+2)create-react-app nameOfApp
+after naming the app,
+3)npm start
+
+What is react 
+This is a javascript view library that is,react Focuses only on rendering the UI using javascript
+A library in programming is a collection of pre-written code that developers can use to simplify tasks 
+and avoid "reinventing the wheel
+This is the core of the package that does the Dom manipulation for us 
+React is so good that you can create components that is reuseable
+    What is react Dom
+React DOM is the package that allows React to interact with the actual Document Object Model (DOM) in web browsers.
+It provides methods to render React components into the browser and update the UI efficiently.
+
+note:
+-whenever we are importing, we can either use only the filename or the filename.js
+./ means we can getting the file from the same directory
+-Whenever you are building a component, it should be capitalized
+-When returning inside the js file, after the return add a parenthesis because the return keyword returns only one line.
+
+    Tachyons
+This is similar to bootstrap.
+It has predefined classes that can be added to our html elements.
+    How to install tachyons
+npm install tachyons
+
+    jsx
+This allows you to write html inside javascript
+in react we use className instead of class cos class is a reserved word in js.
+you put js components in {} brackets when writing it with html
+
+    Props(properties)
+These are html attributes
+These are inputs that we get and never modify them.
+props are a way to pass data from a parent component to a child component in React. 
+
+    children
+Every props object has children
+
+    State
+It is an object that discribes your application.
+State is able to change
+state lives in the parent component
+Any component that has state uses the class syntax
+
+Props are things that comes out of state
+A parent feeds state into a child component, as soon as the child componet receives a state, it is a property(props).
+
+    exports
+for exports that are not default, we destructure it
+
+Whenever you loop, you have to give it a unique key
+
+one way data flow
+This means that in react, data flows one way i.e from parent to children
+
+    functions
+anytime you create your own function in react, use arror function
+when you use react smart components, you dont use arror function
+
+    setState()
+This is used to change state in react
+
+    Smart components
+Any component that has state is called a smart component.
+They tend to have "class" syntax
+
+    life cycle methods/hooks
+Go to react.dev for the new React docs
+They are called life cycle hooks because they get run whenever a component does something.
+examples 
+-render()
+-componentDidcatch()
+
+    fetch()
+This is a windows object, it is a tool for us to make request
+
+    Style
+You can add style in react by using double curly brackets
+
+npm run build
+This generates an optimized production-ready version of the app.
+What It Does
+-Minifies JavaScript & CSS to reduce file size.
+-Optimizes assets (e.g., images, fonts) for better performance.
+-Removes development-specific code (e.g., warnings, hot reloading).
+-Outputs a build/ folder with static files ready to be deployed.
+
+    Erorr Boundaries
+This is a way of managing our react app incase one of our components break.
+This is used in production
+
+    State Management
+state discribes what our app should look like
+react is a group of components that are rendered in a tree like structure
+think of state as memory
+we can have different state in different components
+
+    Ridux
+This solves the problem of state Management
+This gives one massive component the entire state and pass them as props to any components that need them 
+ridux is a library that makes state Management easier
+
+    Why use ridux
+-Good for managing large state
+-Useful for sharing data within containers
+-Predictable state Management using the following principles
+    The 3 principles
+-one very big object that determines the entire state of the app.
+-state is read only. cannot be modified
+-changes using pure function
+
+    How redux works
+1)action: whenever you click a button, it goes through a reducer
+2)reducer: This is a pure function, it receives an input and it returns an Output
+3)store: the output from the pure function is a state(store)
+4)Make chaanges to the store
+
+note: ridux === this.state
+
+    installing redux(video18)
+npm install redux
+npm install react-redux
+
+react redux will connect only the containers to redux store.
+
+website 
+
+https://robohash.org/
+
+https://www.cufonfonts.com/font/sega-logo-font
+
+https://jsonplaceholder.typicode.com/
+
+

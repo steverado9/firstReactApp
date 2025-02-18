@@ -1,9 +1,12 @@
 import react, { Component } from 'react';
+import { connect } from 'react-redux';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import ErrorBoundry from '../components/ErrorBoundary';
 import './App.css';
+
+import { setSearchField } from '../actions';
 
 
 class App extends Component { //extended App component
@@ -15,7 +18,7 @@ class App extends Component { //extended App component
         }
     }
 
-    componentDidMount() {
+    componentDidMount() {        
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
             .then(users => this.setState({ robots: users }));
@@ -48,4 +51,4 @@ class App extends Component { //extended App component
 }
 
 
-export default App;
+export default connect()(App);

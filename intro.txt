@@ -133,6 +133,18 @@ npm install react-redux
 
 react redux will connect only the containers to redux store.
 
+connect(): This is a highter order function. higher order functions returns another function
+
+    middleWare
+This listens for actions i.e it is a tunnel that actions go through
+it can either modify the action or trigger the action.
+They are like triggers that actions go through before it hits the reducer
+example of middleWare
+1)redux-logger: This helps with logging in the console so we can easily debug our app
+npm install redux-logger
+2)redux-thunk; This helps handles asynchronous functions
+npm install redux-thunk
+
 website 
 
 https://robohash.org/

@@ -120,10 +120,10 @@ ridux is a library that makes state Management easier
 -changes using pure function
 
     How redux works
-1)action: whenever you click a button, it goes through a reducer
+1)action: whenever you click a button(perform an action), it goes through a reducer
 2)reducer: This is a pure function, it receives an input and it returns an Output
 3)store: the output from the pure function is a state(store)
-4)Make chaanges to the store
+4)Make changes to the store
 
 note: ridux === this.state
 

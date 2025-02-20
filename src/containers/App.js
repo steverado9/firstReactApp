@@ -8,7 +8,7 @@ import './App.css';
 
 import { requestRobots, setSearchField } from '../actions';
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
     return {
         searchField: state.searchRobots.searchField,
         robots: state.requestRobots.robots,
@@ -24,15 +24,10 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-
 class App extends Component { //extended App component
-   
-
     componentDidMount() {        
        this.props.onRequestRobots();
     }
-
- 
     render() {
         const { searchField, onSearchChange, robots, isPending } = this.props;
         const filteredRobot = robots.filter((robot) => {

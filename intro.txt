@@ -145,6 +145,26 @@ npm install redux-logger
 2)redux-thunk; This helps handles asynchronous functions
 npm install redux-thunk
 
+    Common tools to use with react
+REACT ROUTER: This is for routing ie changing pages
+glamorous: This is a tool used for styling 
+styled component: This is similar to glamorous
+css modules
+gatsbyjs.org: This is usedful to create static websites in react
+Next.js5: popular for server side rendered app
+material UI components: These are components you can just add to your code
+semantic ui
+
+    Utility library
+These are libraries that add to the current javascript tools
+1)ramda
+2)lodash
+
+    Tools that make react more efficient
+Reselect: This helps with selectors 
+redux-saga: handles asynchronous actions
+immutablejs: we can use it as a library to make our state immutable
+
 website 
 
 https://robohash.org/
